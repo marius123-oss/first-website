@@ -1,52 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body{
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .container{
-                display: flex;
-                flex-direction: column;
-                width: 300px;
-                padding: 15px;
-                border: 1px solid skyblue;
-                border-radius: 5px;
-            }
-            input{
-                margin: 5px 0px;
-                height: 35px;
-                padding: 7px;
-            }
-            button{
-                height: 35px;
-                margin: 5px 0px;
-                background-color: skyblue;
-                border: none;
-                border-radius: 5px;
-                color: #333;
-            }
-            button:hover{
-                background-color: #333;
-                color: skyblue;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <input type="email"
-            placeholder="email">
-            <input type="password"
-            placeholder="password">
-            <button>Login</button>
+<html lang="en">
+<head>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:
+                cursive;
+            box-sizing:
+                border-box
+        }
+        .flex-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .flex-box{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(blue,yellow,red);
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        line-height: 200px;
+        border-radius: 20px
+            ;
+        margin: 10px;
+        }
+        .button{
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="flex-container">
+        <div class="flex-box">
+            Box1
         </div>
-    </body>
+        <div class="flex-box">
+            Box1
+        </div>
+        <div class="flex-box">
+            Box1
+        </div>
+        <div class="flex-box">
+            Box1
+        </div>
+        <div class="flex-box">
+            Box1
+        </div>
+   </div>
+      
+
+      
+
+
+
+
+
+
+
+
+     <div class="button">
+     <button onclick="doSomething()"  style="font-size: 35px; background-color: gray; color: lightblue; border-radius: 25px; ;">Click me!</button>
+     <h2 id="Greeting">Hello</h2>
+     </div>
+
+
+   
+
+    
+    <script>
+        function doSomething(){
+             document.getElementById("Greeting").innerHTML = "GoodBye";
+        }
+    </script>
+</body>
 </html>
